@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
+import MobileNav from "./MobileNav";
+import { DataProvider } from "./context/DataContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div 
+      className=' w-full h-screen flex flex-col justify-between overflow-x-hidden max-w-screen-2xl mx-auto border-x-[1px] border-black relative'
+    >
+      <DataProvider>
+        <Header />
+        <Main />
+        <Footer />
+        <MobileNav />
+      </DataProvider>
     </div>
   );
 }

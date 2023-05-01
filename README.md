@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-bookmark-landing-page-8-Ei7RXyOA)
+- Live Site URL: [Add live site URL here](https://t-tech26.github.io/bookmark-landing-page-master/)
 
 ## My process
 
@@ -66,5 +66,5 @@ I learned how to make use of some of the react hooks, which are most commonly us
 
 - Frontend Mentor - [@T-tech26](https://www.frontendmentor.io/profile/T-tech26)
 - LinkedIn - [Tariladei Doutua](https://www.your-site.com)
-- Twitter - [@TariDoutua](https://www.twitter.com/yourusername)
+- Twitter - [@TariDoutua](https://twitter.com/TariDoutua/status/1653039389088284673)
 

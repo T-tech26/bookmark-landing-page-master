@@ -6,7 +6,7 @@ import Dot from './images/bg-dots.svg';
 const DownloadCards = () => {
   return (
     <>
-      <div
+      <article
         className=' w-[15rem] h-auto p-5 flex items-center justify-between flex-col rounded-xl shadow-md'
       >
         <div
@@ -40,9 +40,9 @@ const DownloadCards = () => {
         >
           Add & Install Extension
         </button>
-      </div>
+      </article>
 
-      <div
+      <article
         className=' w-[15rem] h-auto p-5 flex items-center justify-between flex-col rounded-xl shadow-md md:mt-20'
       >
         <div
@@ -76,9 +76,9 @@ const DownloadCards = () => {
         >
           Add & Install Extension
         </button>
-      </div>
+      </article>
 
-      <div
+      <article
         className=' w-[15rem] h-auto p-5 flex items-center justify-between flex-col rounded-xl shadow-md md:mt-40'
       >
         <div
@@ -112,7 +112,7 @@ const DownloadCards = () => {
         >
           Add & Install Extension
         </button>
-      </div>
+      </article>
     </>
   )
 }

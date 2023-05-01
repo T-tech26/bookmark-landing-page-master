@@ -30,30 +30,34 @@ const MobileNav = () => {
           />
         </div>
 
-        <ul
-          className=' w-full flex-grow pt-8'
+        <div
+          className=' w-full flex-grow pt-16'
         >
-          <li
-            className=' text-center text-white text-lg uppercase tracking-widest py-5 border-y-[1px] border-Grayish-Blue cursor-pointer hover:text-Soft-Red'
+          <ul
+            className=' w-full flex-grow'
           >
-            features
-          </li>
-          <li
-            className=' text-center text-white text-lg uppercase tracking-widest py-5 border-b-[1px] border-Grayish-Blue cursor-pointer hover:text-Soft-Red'
-          >
-            pricing
-          </li>
-          <li
-            className=' text-center text-white text-lg uppercase tracking-widest py-5 border-b-[1px] border-Grayish-Blue cursor-pointer hover:text-Soft-Red'
-          >
-            contact
-          </li>
-          <button
-            className=' w-full py-5 mt-8 border-white border-2 rounded-lg text-white text-lg font-[500] uppercase tracking-[3px] cursor-pointer hover:text-Soft-Red'
-          >
-            login
-          </button>
-        </ul>
+            <li
+              className=' text-center text-white text-lg uppercase tracking-widest py-5 border-y-[1px] border-Grayish-Blue cursor-pointer hover:text-Soft-Red'
+            >
+              features
+            </li>
+            <li
+              className=' text-center text-white text-lg uppercase tracking-widest py-5 border-b-[1px] border-Grayish-Blue cursor-pointer hover:text-Soft-Red'
+            >
+              pricing
+            </li>
+            <li
+              className=' text-center text-white text-lg uppercase tracking-widest py-5 border-b-[1px] border-Grayish-Blue cursor-pointer hover:text-Soft-Red'
+            >
+              contact
+            </li>
+          </ul>
+            <button
+              className=' w-full py-5 mt-8 border-white border-2 rounded-lg text-white text-lg font-[500] uppercase tracking-[3px] cursor-pointer hover:text-Soft-Red'
+            >
+              login
+            </button>
+        </div>
 
         <div
           className=' w-full flex items-center justify-center gap-10 '

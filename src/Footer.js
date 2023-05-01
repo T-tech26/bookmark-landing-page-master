@@ -10,12 +10,12 @@ const Footer = () => {
         className=' w-full h-auto flex flex-col items-center gap-5 sm:flex-row sm:items-center sm:justify-between'
       >
         <div
-          className=' w-full flex flex-col items-center gap-5 sm:flex-row sm:justify-between sm:gap-1 sm:w-[20rem] md:w-[25rem] md:gap-4'
+          className=' w-full flex flex-col items-center gap-5 sm:flex-row sm:justify-between sm:gap-1 sm:w-[27rem] md:w-[30rem]'
         >
           <Whitelogo />
          
           <ul
-            className=' flex flex-col gap-5 sm:flex-row sm:gap-2 md:gap-7'
+            className=' flex flex-col gap-5 sm:flex-row sm:gap-7 md:gap-10'
           >
             <li
               className=' text-white text-base tracking-wider hover:text-Soft-Red cursor-pointer'
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div
-          className=' flex gap-5 sm:gap-2 md:gap-5 items-center'
+          className=' flex gap-5 sm:gap-5 items-center'
         >
           <svg 
             className={
@@ -68,7 +68,7 @@ const Footer = () => {
         </a>. 
         Coded by <a 
           className=' text-Soft-Blue hover:underline decoration-white decoration-2 hover:underline-offset-4'
-          href="link.com"
+          href="https://github.com/T-tech26/bookmark-landing-page-master"
         >
           Tari Doutua
         </a>.

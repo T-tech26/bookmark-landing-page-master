@@ -27,10 +27,10 @@ const Header = () => {
         />
 
         <div
-          className=' w-3/4 md:w-[65%] xl:w-1/2 h-auto hidden md:block pl-20'
+          className=' w-3/4 md:w-[28rem] h-auto hidden md:flex justify-between items-center gap-10'
         >
           <ul
-            className=' flex item-center justify-between items-center'
+            className=' flex flex-grow justify-between items-center'
           >
             <li
               className=' text-sm uppercase text-Very-Dark-Blue tracking-wider font-[500] hover:text-Soft-Red cursor-pointer'
@@ -47,14 +47,13 @@ const Header = () => {
             >
               contact
             </li>
+          </ul>
 
-            <button 
+          <button 
               className=' text-sm uppercase text-white font-[500] py-3 px-10 bg-Soft-Red rounded-md shadow-lg hover:text-Soft-Red hover:bg-opacity-0 hover:border-2 hover:border-Soft-Red hover:py-[10px] hover:px-[38px]'
             >
               login
             </button>
-          </ul>
-
         </div>
       </section>
     </header>

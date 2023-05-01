@@ -23,7 +23,7 @@ const FAQs = () => {
           <span>
             <svg 
               className={
-                `cursor-pointer custom-transition ${flipImgOne} stroke-${strokeColorOne} hover:stroke-Soft-Red`
+                `cursor-pointer custom-transition ${flipImgOne} ${strokeColorOne} hover:stroke-Soft-Red`
               }
               xmlns="http://www.w3.org/2000/svg" 
               width="18" 
@@ -56,7 +56,7 @@ const FAQs = () => {
           <span>
             <svg 
               className={
-                `cursor-pointer custom-transition ${flipImgTwo} stroke-${strokeColorTwo} hover:stroke-Soft-Red`
+                `cursor-pointer custom-transition ${flipImgTwo} ${strokeColorTwo} hover:stroke-Soft-Red`
               }
               xmlns="http://www.w3.org/2000/svg" 
               width="18" 
@@ -89,7 +89,7 @@ const FAQs = () => {
           <span>
             <svg 
               className={
-                `cursor-pointer custom-transition ${flipImgThree} stroke-${strokeColorThree} hover:stroke-Soft-Red`
+                `cursor-pointer custom-transition ${flipImgThree} ${strokeColorThree} hover:stroke-Soft-Red`
               }
               xmlns="http://www.w3.org/2000/svg" 
               width="18" 
@@ -121,7 +121,7 @@ const FAQs = () => {
           <span>
             <svg 
               className={
-                `cursor-pointer custom-transition ${flipImgFour} stroke-${strokeColorFour} hover:stroke-Soft-Red`
+                `cursor-pointer custom-transition ${flipImgFour} ${strokeColorFour} hover:stroke-Soft-Red`
               }
               xmlns="http://www.w3.org/2000/svg" 
               width="18" 

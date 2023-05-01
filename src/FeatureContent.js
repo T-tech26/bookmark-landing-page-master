@@ -13,7 +13,7 @@ const FeatureContent = () => {
     <section>
       <FeatureHeading />
       <div
-        className={`relative w-auto h-auto grid grid-cols-feature-col custom-transition translate-x-[${slideTab}%]`
+        className={`relative w-auto h-auto grid grid-cols-feature-col custom-transition ${slideTab}`
         }
       >
         <FeatureContent1 />

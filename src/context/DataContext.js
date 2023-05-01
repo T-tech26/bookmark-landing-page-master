@@ -5,7 +5,7 @@ const DataContext = createContext({});
 export const DataProvider = ({ children }) => {
 
   const [showNav, setShowNav] = useState('left-[-100%]');
-  const [slideTab, setSlideTab] = useState(0);
+  const [slideTab, setSlideTab] = useState('translate-x-[0%]');
   const [firstTabBorder, setFirstTabBorder] = useState('');
   const [secondTabBorder, setSecondTabBorder] = useState('');
   const [thirdTabBorder, setThirdTabBorder] = useState('');
@@ -20,10 +20,10 @@ export const DataProvider = ({ children }) => {
   const [showError, setShowError] = useState('hidden');
   const [errorBg, setErrorBg] = useState('');
   const [email, setEmail] = useState('');
-  const [strokeColorOne, setStrokeColorOne] = useState('Soft-Blue');
-  const [strokeColorTwo, setStrokeColorTwo] = useState('Soft-Blue');
-  const [strokeColorThree, setStrokeColorThree] = useState('Soft-Blue');
-  const [strokeColorFour, setStrokeColorFour] = useState('Soft-Blue');
+  const [strokeColorOne, setStrokeColorOne] = useState('stroke-Soft-Blue');
+  const [strokeColorTwo, setStrokeColorTwo] = useState('stroke-Soft-Blue');
+  const [strokeColorThree, setStrokeColorThree] = useState('stroke-Soft-Blue');
+  const [strokeColorFour, setStrokeColorFour] = useState('stroke-Soft-Blue');
 
   const showMenu = () => {
     showNav === 'left-[-100%]' ? setShowNav('left-[0%]') : setShowNav('left-[-100%]');
@@ -34,18 +34,19 @@ export const DataProvider = ({ children }) => {
   }
 
   const slideTabs = (tab) => {
-    tab === 'tab1' && setSlideTab(0);
-    tab === 'tab2' && setSlideTab(-100);
-    tab === 'tab3' && setSlideTab(-200);
+    tab === 'tab1' && setSlideTab('translate-x-[0%]');
+    tab === 'tab2' && setSlideTab('translate-x-[-100%]');
+    tab === 'tab3' && setSlideTab('translate-x-[-200%]');
   }
 
   useEffect(() => {
-    const setBorders = () => {
-      slideTab === 0 ? setFirstTabBorder('before:bg-Soft-Red') : setFirstTabBorder('');
 
-      slideTab === -100 ? setSecondTabBorder('before:bg-Soft-Red') : setSecondTabBorder('');
+    const setBorders = () => {
+      slideTab === 'translate-x-[0%]' ? setFirstTabBorder('before:bg-Soft-Red') : setFirstTabBorder('');
+
+      slideTab === 'translate-x-[-100%]' ? setSecondTabBorder('before:bg-Soft-Red') : setSecondTabBorder('');
       
-      slideTab === -200 ? setThirdTabBorder('before:bg-Soft-Red') : setThirdTabBorder('');
+      slideTab === 'translate-x-[-200%]' ? setThirdTabBorder('before:bg-Soft-Red') : setThirdTabBorder('');
     }
     setBorders();
   },[slideTab])
@@ -54,45 +55,45 @@ export const DataProvider = ({ children }) => {
     if(Qus === 'Qus1' && answerOne === 'h-0') {
       setAnswerOne('h-auto');
       setFlipImgOne('img');
-      setStrokeColorOne('Soft-Red');
+      setStrokeColorOne('stroke-Soft-Red');
 
     } else {
       setAnswerOne('h-0');
       setFlipImgOne('');
-      setStrokeColorOne('Soft-Blue');
+      setStrokeColorOne('stroke-Soft-Blue');
     }
     
     if(Qus === 'Qus2' && answerTwo === 'h-0') {
       setAnswerTwo('h-auto');
       setFlipImgTwo('img');
-      setStrokeColorTwo('Soft-Red');
+      setStrokeColorTwo('stroke-Soft-Red');
 
     } else {
       setAnswerTwo('h-0');
       setFlipImgTwo('');
-      setStrokeColorTwo('Soft-Blue');
+      setStrokeColorTwo('stroke-Soft-Blue');
     }
     
     if(Qus === 'Qus3' && answerThree === 'h-0') {
       setAnswerThree('h-auto');
       setFlipImgThree('img');
-      setStrokeColorThree('Soft-Red');
+      setStrokeColorThree('stroke-Soft-Red');
 
     } else {
       setAnswerThree('h-0');
       setFlipImgThree('');
-      setStrokeColorThree('Soft-Blue');
+      setStrokeColorThree('stroke-Soft-Blue');
     }
     
     if(Qus === 'Qus4' && answerFour === 'h-0') {
       setAnswerFour('h-auto');
       setFlipImgFour('img');
-      setStrokeColorFour('Soft-Red');
+      setStrokeColorFour('stroke-Soft-Red');
 
     } else {
       setAnswerFour('h-0');
       setFlipImgFour('');
-      setStrokeColorFour('Soft-Blue');
+      setStrokeColorFour('stroke-Soft-Blue');
     }
   }
 

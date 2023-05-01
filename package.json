@@ -1,6 +1,7 @@
 {
   "name": "bookmark-landing-page-master",
   "version": "0.1.0",
+  "homepage": "https://T-tech26.github.io/bookmark-landing-page-master",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -8,6 +9,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +33,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
